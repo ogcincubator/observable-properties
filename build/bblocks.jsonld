@@ -106,7 +106,7 @@
   "name": "Building Blocks - Observable Properties Descriptions",
   "abstract": "Building blocks to define schema and ontology options for description of observable properties and how these may be used to augment other standards.\n",
   "description": "Based on I-ADOPT model, with simpler fallbacks as required.\n",
-  "modified": "2025-02-18T17:53:55.847938",
+  "modified": "2025-02-18T17:54:56.396074",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"4628215f9c0319ef7d8ac960fb2adce65165b859",
@@ -189,9 +189,9 @@
       ],
       "shaclRules": {
         "ogc.oms.obs-props.iadopt-ontology": [
-          "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl",
           "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
-          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
+          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
+          "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl"
         ]
       },
       "sources": [

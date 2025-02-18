@@ -16,9 +16,9 @@
   ],
   "shaclRules": {
     "ogc.oms.obs-props.iadopt-ontology": [
-      "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl",
       "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
-      "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
+      "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
+      "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl"
     ]
   },
   "sources": [
