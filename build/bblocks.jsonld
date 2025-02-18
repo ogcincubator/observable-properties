@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined"
+      "@base": "https://ogcincubator.github.io/observable-properties"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,7 +106,7 @@
   "name": "Building Blocks - Observable Properties Descriptions",
   "abstract": "Building blocks to define schema and ontology options for description of observable properties and how these may be used to augment other standards.\n",
   "description": "Based on I-ADOPT model, with simpler fallbacks as required.\n",
-  "modified": "2025-02-18T17:51:44.975184",
+  "modified": "2025-02-18T17:53:55.847938",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"4628215f9c0319ef7d8ac960fb2adce65165b859",
@@ -116,9 +116,9 @@
   },
   "gitRepository": "https://github.com/ogcincubator/observable-properties",
   "gitHubRepository": "https://github.com/ogcincubator/observable-properties/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/",
-  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/",
-  "validationReport": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/tests/report.html",
+  "baseURL": "https://ogcincubator.github.io/observable-properties/",
+  "viewerURL": "https://ogcincubator.github.io/observable-properties/",
+  "validationReport": "https://ogcincubator.github.io/observable-properties/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -150,21 +150,21 @@
       "scope": "unstable",
       "tags": [],
       "shaclRules": {},
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-uml/",
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-uml/",
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/markdown/oms/obs-props/iadopt-uml/index.md"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-uml/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/json-full/oms/obs-props/iadopt-uml/index.json"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-uml/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/bblock/ogc.oms.obs-props.iadopt-uml"
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-uml"
         }
       },
       "@type": [
@@ -189,9 +189,9 @@
       ],
       "shaclRules": {
         "ogc.oms.obs-props.iadopt-ontology": [
+          "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl",
           "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
-          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
-          "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-ontology/rules.shacl"
+          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
         ]
       },
       "sources": [
@@ -208,23 +208,23 @@
       "scope": "unstable",
       "tags": [],
       "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
-      "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-ontology/remote_cache/",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-ontology/",
+      "remoteCacheDir": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-ontology/remote_cache/",
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/",
       "rdfData": [],
       "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-ontology/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/markdown/oms/obs-props/iadopt-ontology/index.md"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-ontology/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/json-full/oms/obs-props/iadopt-ontology/index.json"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-ontology/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/bblock/ogc.oms.obs-props.iadopt-ontology"
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-ontology"
         }
       },
       "@type": [
@@ -261,26 +261,26 @@
       "group": "Examples",
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-schema/schema.yaml",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-schema/",
+      "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/schema.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/",
       "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-schema/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/json-full/oms/obs-props/iadopt-schema/index.json"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-schema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/bblock/ogc.oms.obs-props.iadopt-schema"
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema"
         }
       },
       "@type": [
@@ -314,26 +314,26 @@
       "group": "Examples",
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/obs-props-schema/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/obs-props-schema/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/obs-props-schema/schema.yaml",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/obs-props-schema/",
+      "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/schema.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/",
       "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/obs-props-schema/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/markdown/oms/obs-props/obs-props-schema/index.md"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/obs-props-schema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/generateddocs/json-full/oms/obs-props/obs-props-schema/index.json"
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/obs-props-schema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/bblock/ogc.oms.obs-props.obs-props-schema"
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.obs-props-schema"
         }
       },
       "@type": [

@@ -51,7 +51,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-02-18T17:51:45.936617+00:00</small>
+            <small class="datetime">Generated at 2025-02-18T17:53:56.863689+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 3 / 4 (75%)
                 </p>
@@ -138,6 +138,12 @@
   	Value Node: envthes:23
   	Result Path: iadopt:constrains
   	Message: Value does not have class iadopt:Entity
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class iadopt:Property ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasProperty ]
+  	Focus Node: envthes:30333
+  	Result Path: iadopt:hasProperty
+  	Message: Less than 1 values on envthes:30333-&gt;iadopt:hasProperty
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: [ sh:class iadopt:Property ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasProperty ]
@@ -147,10 +153,10 @@
   	Message: Value does not have class iadopt:Property
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: [ sh:class iadopt:Property ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasProperty ]
+  	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]
   	Focus Node: envthes:30333
-  	Result Path: iadopt:hasProperty
-  	Message: Less than 1 values on envthes:30333-&gt;iadopt:hasProperty
+  	Result Path: iadopt:hasObjectOfInterest
+  	Message: Less than 1 values on envthes:30333-&gt;iadopt:hasObjectOfInterest
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]
@@ -158,12 +164,6 @@
   	Value Node: envthes:23
   	Result Path: iadopt:hasObjectOfInterest
   	Message: Value does not have class iadopt:Entity
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]
-  	Focus Node: envthes:30333
-  	Result Path: iadopt:hasObjectOfInterest
-  	Message: Less than 1 values on envthes:30333-&gt;iadopt:hasObjectOfInterest
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:path iadopt:hasMatrix ]
@@ -173,11 +173,11 @@
   	Message: Value does not have class iadopt:Entity
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl:
- - Shape iadopt:ConstraintShape: envthes:30375
  - Shape iadopt:PropertyShape: *none*
- - Shape iadopt:VariableSetShape: *none*
- - Shape iadopt:VariableShape: envthes:30377,envthes:30333
+ - Shape iadopt:ConstraintShape: envthes:30375
+ - Shape iadopt:VariableShape: envthes:30333,envthes:30377
  - Shape iadopt:EntityShape: *none*
+ - Shape iadopt:VariableSetShape: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/iadopt-ontology/rules.shacl:
   Validation Report
@@ -204,7 +204,7 @@
   	Message: Variable needs to have exactly one ObjectOfInterest.
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:
- - Shape shape:VariableShape: envthes:30377,envthes:30333
+ - Shape shape:VariableShape: envthes:30333,envthes:30377
  - Shape shape:ConstraintShape: envthes:30375
 </div>
                                                     </div>

@@ -22,7 +22,7 @@
   "scope": "unstable",
   "tags": [],
   "shaclRules": {},
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-uml/",
+  "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-uml/",
   "rdfData": [],
   "validationPassed": true,
   "description": "## I-ADOPT UML model\n\nDocumentation for FAIR publication of the UML model for I-Adopt",

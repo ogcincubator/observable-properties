@@ -64,8 +64,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml)
 
 
 # For developers

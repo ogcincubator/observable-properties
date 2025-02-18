@@ -28,11 +28,11 @@
   "group": "Examples",
   "shaclRules": {},
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-schema/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-schema/",
+  "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-schema/",
@@ -43,7 +43,7 @@
           "language": "json",
           "ref": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/tests/valid/full-single-items.jsonld",
           "code": "{\n  \"@context\": \"https://w3id.org/iadopt/Variable.context.jsonld\",\n  \"@id\": \"http://vocab.nerc.ac.uk/collection/P01/current/IC000344/\",\n  \"@type\": \"https://w3id.org/iadopt/ont/Variable\",\n  \"label\": \"concentration of endosulfane sulfate in wet flesh of ostrea edulis\",\n\n  \"property\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Property\" ],\n    \"@id\": \"http://vocab.nerc.ac.uk/collection/S06/current/S0600045/\",\n    \"label\": \"concentration\"\n  },\n\n  \"ooi\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Entity\" ],\n    \"@id\": \"http://vocab.nerc.ac.uk/collection/S27/current/CS003625/\",\n    \"label\": \"endosulfane sulfate\"\n  },\n\n  \"matrix\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Entity\" ],\n    \"@id\": \"http://vocab.nerc.ac.uk/collection/S12/current/S1214/\",\n    \"label\": \"flesh\"\n  },\n\n  \"context\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Entity\" ],\n    \"@id\": \"http://marinespecies.org/aphia.php?p=taxdetails&id=140658\",\n    \"label\": \"ostrea edulis\"\n  },\n\n  \"constraint\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Constraint\", \"http://purl.obolibrary.org/obo/PATO_0001823\" ],\n    \"label\": \"wet\",\n    \"constrains\": [ \"http://vocab.nerc.ac.uk/collection/S12/current/S1214/\" ]\n  }\n\n}\n",
-          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/tests/oms/obs-props/iadopt-schema/example_1_1.json"
+          "url": "https://ogcincubator.github.io/observable-properties/build/tests/oms/obs-props/iadopt-schema/example_1_1.json"
         }
       ]
     }
