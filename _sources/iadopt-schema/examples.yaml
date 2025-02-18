@@ -1,0 +1,3 @@
+- snippets:
+    - language: json
+      ref: https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/tests/valid/full-single-items.jsonld

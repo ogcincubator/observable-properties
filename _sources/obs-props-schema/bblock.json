@@ -1,0 +1,25 @@
+{
+  "name": "ObservableProperties JSON schema",
+  "abstract": "Local copy for working",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2023-05-19",
+  "sources": [
+    {
+      "title": "Original",
+      "link": "https://github.com/SirkoS/iadopt-schema/blob/main/json/"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "iadopt-uml"
+  ],
+  "tags": [
+
+  ],
+  "group": "Examples"
+}

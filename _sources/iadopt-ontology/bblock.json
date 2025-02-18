@@ -1,0 +1,30 @@
+{
+  "name": "I-ADOPT Ontology",
+  "highlighted": true,
+  "abstract": "I-ADOPT ontology and core validation rules - source version",
+  "status": "under-development",
+  "dateTimeAddition": "2025-02-16T00:00:00Z",
+  "itemClass": "model",
+  "register": "observable-properties",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
+   "dependsOn": [ "iadopt-uml"
+  ],
+  "shaclRules": [ "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
+  "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"],
+  "sources": [
+    {
+      "title": "Link to source",
+      "link": "https://i-adopt.github.io/ontology"
+    },
+    {
+      "title": "ALternative SHACL",
+      "link": "https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+  ]
+}

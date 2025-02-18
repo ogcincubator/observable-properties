@@ -1,0 +1,26 @@
+{
+  "name": "ObservableProperties JSON schema",
+  "abstract": "Defines a JSON schema for observable properties - based on the I-ADOPT model",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2023-05-19",
+  "sources": [
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [ "iadopt-uml"
+  ],
+  "context": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.context.jsonld",
+  "tags": [
+    "examples",
+    "sosa",
+    "observations",
+    "o&m",
+    "o&m&s",
+    "geopose"
+  ],
+  "group": "Examples"
+}

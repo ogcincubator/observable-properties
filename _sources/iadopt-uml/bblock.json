@@ -1,0 +1,22 @@
+{
+  "name": "I-ADOPT UML Model",
+  "highlighted": true,
+  "abstract": "I-ADOPT UML model",
+  "status": "under-development",
+  "dateTimeAddition": "2025-02-16T00:00:00Z",
+  "itemClass": "model",
+  "register": "observable-properties",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "ontology": "ontology.ttl",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+  ]
+}

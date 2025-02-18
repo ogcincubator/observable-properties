@@ -1,0 +1,3 @@
+- snippets:
+    - language: json
+      ref: examples/full-single-items.json
