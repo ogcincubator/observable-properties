@@ -1,4 +1,0 @@
-"$schema": https://json-schema.org/draft/2020-12/schema
-description: 'Original IADOPT schema'
-allOf:
-  - $ref: https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.schema.json

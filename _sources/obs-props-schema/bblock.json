@@ -1,11 +1,12 @@
 {
   "name": "ObservableProperties JSON schema",
+  "highlighted": true,
   "abstract": "Local copy for working",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
-  "version": "1.0",
+  "version": "1.1",
   "dateOfLastChange": "2023-05-19",
   "sources": [
     {
@@ -19,7 +20,6 @@
     "iadopt-uml"
   ],
   "tags": [
-
   ],
   "group": "Examples"
 }
