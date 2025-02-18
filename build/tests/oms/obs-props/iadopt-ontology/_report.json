@@ -1,0 +1,140 @@
+{
+  "title": "Validation report for ogc.oms.obs-props.iadopt-ontology - I-ADOPT Ontology",
+  "bblockName": "I-ADOPT Ontology",
+  "bblockId": "ogc.oms.obs-props.iadopt-ontology",
+  "generated": "2025-02-18T17:51:45.858899+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/oms/obs-props/iadopt-ontology/example_1_1.ttl",
+        "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/tests/oms/obs-props/iadopt-ontology/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle",
+        "sourceUrl": "https://i-adopt.github.io/examples/Challenge/2.ttl"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 60,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mynamespace"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
+              "graph": "@prefix iadopt: <https://w3id.org/iadopt/ont/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30377> ;\n            sh:resultMessage \"Value does not have class iadopt:Entity\" ;\n            sh:resultPath iadopt:hasMatrix ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape [ sh:class iadopt:Entity ;\n                    sh:maxCount 1 ;\n                    sh:path iadopt:hasMatrix ] ;\n            sh:value <https://vocabulary.actris.nilu.no/actris_vocab/troposphere> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30333> ;\n            sh:resultMessage \"Less than 1 values on envthes:30333->iadopt:hasProperty\" ;\n            sh:resultPath iadopt:hasProperty ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape _:n90a4f3b8dd224b1cb322c9912ae09a82b6 ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30377> ;\n            sh:resultMessage \"Value does not have class iadopt:Property\" ;\n            sh:resultPath iadopt:hasProperty ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape _:n90a4f3b8dd224b1cb322c9912ae09a82b6 ;\n            sh:value <http://qudt.org/vocab/quantitykind/Temperature> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30333> ;\n            sh:resultMessage \"Less than 1 values on envthes:30333->iadopt:hasObjectOfInterest\" ;\n            sh:resultPath iadopt:hasObjectOfInterest ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape _:n90a4f3b8dd224b1cb322c9912ae09a82b8 ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30377> ;\n            sh:resultMessage \"Value does not have class iadopt:Entity\" ;\n            sh:resultPath iadopt:hasObjectOfInterest ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape _:n90a4f3b8dd224b1cb322c9912ae09a82b8 ;\n            sh:value <http://vocabs.lter-europe.net/EnvThes/23> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30375> ;\n            sh:resultMessage \"Value does not have class iadopt:Entity\" ;\n            sh:resultPath iadopt:constrains ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape [ sh:class iadopt:Entity ;\n                    sh:minCount 1 ;\n                    sh:path iadopt:constrains ] ;\n            sh:value <http://vocabs.lter-europe.net/EnvThes/23> ] .\n\n_:n90a4f3b8dd224b1cb322c9912ae09a82b6 sh:class iadopt:Property ;\n    sh:maxCount 1 ;\n    sh:minCount 1 ;\n    sh:path iadopt:hasProperty .\n\n_:n90a4f3b8dd224b1cb322c9912ae09a82b8 sh:class iadopt:Entity ;\n    sh:maxCount 1 ;\n    sh:minCount 1 ;\n    sh:path iadopt:hasObjectOfInterest .\n\n",
+              "isError": true,
+              "message": "Validation result for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl:\n  Validation Report\n  Conforms: False\n  Results (6):\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:class iadopt:Entity ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path iadopt:constrains ]\n  \tFocus Node: envthes:30375\n  \tValue Node: envthes:23\n  \tResult Path: iadopt:constrains\n  \tMessage: Value does not have class iadopt:Entity\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:class iadopt:Property ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path iadopt:hasProperty ]\n  \tFocus Node: envthes:30377\n  \tValue Node: <http://qudt.org/vocab/quantitykind/Temperature>\n  \tResult Path: iadopt:hasProperty\n  \tMessage: Value does not have class iadopt:Property\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:class iadopt:Property ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path iadopt:hasProperty ]\n  \tFocus Node: envthes:30333\n  \tResult Path: iadopt:hasProperty\n  \tMessage: Less than 1 values on envthes:30333->iadopt:hasProperty\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]\n  \tFocus Node: envthes:30377\n  \tValue Node: envthes:23\n  \tResult Path: iadopt:hasObjectOfInterest\n  \tMessage: Value does not have class iadopt:Entity\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]\n  \tFocus Node: envthes:30333\n  \tResult Path: iadopt:hasObjectOfInterest\n  \tMessage: Less than 1 values on envthes:30333->iadopt:hasObjectOfInterest\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:path iadopt:hasMatrix ]\n  \tFocus Node: envthes:30377\n  \tValue Node: <https://vocabulary.actris.nilu.no/actris_vocab/troposphere>\n  \tResult Path: iadopt:hasMatrix\n  \tMessage: Value does not have class iadopt:Entity\n  "
+            },
+            {
+              "shaclFile": "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
+              "focusNodes": {
+                "iadopt:ConstraintShape": {
+                  "nodes": [
+                    "envthes:30375"
+                  ]
+                },
+                "iadopt:PropertyShape": {
+                  "nodes": []
+                },
+                "iadopt:VariableSetShape": {
+                  "nodes": []
+                },
+                "iadopt:VariableShape": {
+                  "nodes": [
+                    "envthes:30377",
+                    "envthes:30333"
+                  ]
+                },
+                "iadopt:EntityShape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl:\n - Shape iadopt:ConstraintShape: envthes:30375\n - Shape iadopt:PropertyShape: *none*\n - Shape iadopt:VariableSetShape: *none*\n - Shape iadopt:VariableShape: envthes:30377,envthes:30333\n - Shape iadopt:EntityShape: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/iadopt-ontology/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/iadopt-ontology/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/iadopt-ontology/rules.shacl",
+              "focusNodes": {
+                "<https://www.ogc.org/rules/template/#testValues>": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/iadopt-ontology/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
+              "graph": "@prefix iadopt: <https://w3id.org/iadopt/ont/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30333> ;\n            sh:resultMessage \"Variable needs to have exactly one ObjectOfInterest.\" ;\n            sh:resultPath iadopt:hasObjectOfInterest ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape [ sh:maxCount 1 ;\n                    sh:message \"Variable needs to have exactly one ObjectOfInterest.\" ;\n                    sh:minCount 1 ;\n                    sh:nodeKind sh:IRI ;\n                    sh:path iadopt:hasObjectOfInterest ] ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://vocabs.lter-europe.net/EnvThes/30333> ;\n            sh:resultMessage \"Variable needs to have exactly one Property.\" ;\n            sh:resultPath iadopt:hasProperty ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape [ sh:maxCount 1 ;\n                    sh:message \"Variable needs to have exactly one Property.\" ;\n                    sh:minCount 1 ;\n                    sh:nodeKind sh:IRI ;\n                    sh:path iadopt:hasProperty ] ] .\n\n",
+              "isError": true,
+              "message": "Validation result for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:\n  Validation Report\n  Conforms: False\n  Results (2):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:message Literal(\"Variable needs to have exactly one Property.\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:nodeKind sh:IRI ; sh:path iadopt:hasProperty ]\n  \tFocus Node: envthes:30333\n  \tResult Path: iadopt:hasProperty\n  \tMessage: Variable needs to have exactly one Property.\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:message Literal(\"Variable needs to have exactly one ObjectOfInterest.\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:nodeKind sh:IRI ; sh:path iadopt:hasObjectOfInterest ]\n  \tFocus Node: envthes:30333\n  \tResult Path: iadopt:hasObjectOfInterest\n  \tMessage: Variable needs to have exactly one ObjectOfInterest.\n  "
+            },
+            {
+              "shaclFile": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
+              "focusNodes": {
+                "shape:VariableShape": {
+                  "nodes": [
+                    "envthes:30377",
+                    "envthes:30333"
+                  ]
+                },
+                "shape:ConstraintShape": {
+                  "nodes": [
+                    "envthes:30375"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:\n - Shape shape:VariableShape: envthes:30377,envthes:30333\n - Shape shape:ConstraintShape: envthes:30375\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  }
+}

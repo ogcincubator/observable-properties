@@ -1,0 +1,54 @@
+
+
+{
+  "itemIdentifier": "ogc.oms.obs-props.iadopt-schema",
+  "name": "ObservableProperties JSON schema",
+  "abstract": "Defines a JSON schema for observable properties - based on the I-ADOPT model",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2025-02-18",
+  "sources": [],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "iadopt-uml"
+  ],
+  "context": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.context.jsonld",
+  "tags": [
+    "examples",
+    "sosa",
+    "observations",
+    "o&m",
+    "o&m&s",
+    "geopose"
+  ],
+  "group": "Examples",
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/annotated/oms/obs-props/iadopt-schema/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-schema/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-schema/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-schema/",
+  "examples": [
+    {
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/tests/valid/full-single-items.jsonld",
+          "code": "{\n  \"@context\": \"https://w3id.org/iadopt/Variable.context.jsonld\",\n  \"@id\": \"http://vocab.nerc.ac.uk/collection/P01/current/IC000344/\",\n  \"@type\": \"https://w3id.org/iadopt/ont/Variable\",\n  \"label\": \"concentration of endosulfane sulfate in wet flesh of ostrea edulis\",\n\n  \"property\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Property\" ],\n    \"@id\": \"http://vocab.nerc.ac.uk/collection/S06/current/S0600045/\",\n    \"label\": \"concentration\"\n  },\n\n  \"ooi\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Entity\" ],\n    \"@id\": \"http://vocab.nerc.ac.uk/collection/S27/current/CS003625/\",\n    \"label\": \"endosulfane sulfate\"\n  },\n\n  \"matrix\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Entity\" ],\n    \"@id\": \"http://vocab.nerc.ac.uk/collection/S12/current/S1214/\",\n    \"label\": \"flesh\"\n  },\n\n  \"context\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Entity\" ],\n    \"@id\": \"http://marinespecies.org/aphia.php?p=taxdetails&id=140658\",\n    \"label\": \"ostrea edulis\"\n  },\n\n  \"constraint\": {\n    \"@type\": [ \"https://w3id.org/iadopt/ont/Constraint\", \"http://purl.obolibrary.org/obo/PATO_0001823\" ],\n    \"label\": \"wet\",\n    \"constrains\": [ \"http://vocab.nerc.ac.uk/collection/S12/current/S1214/\" ]\n  }\n\n}\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/build/tests/oms/obs-props/iadopt-schema/example_1_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Original IADOPT schema\nallOf:\n- $ref: https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.schema.json\n",
+  "gitRepository": "https://github.com/ogcincubator/observable-properties",
+  "gitPath": "_sources/iadopt-schema"
+}

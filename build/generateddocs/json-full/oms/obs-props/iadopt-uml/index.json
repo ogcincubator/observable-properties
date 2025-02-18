@@ -1,0 +1,32 @@
+
+
+{
+  "itemIdentifier": "ogc.oms.obs-props.iadopt-uml",
+  "name": "I-ADOPT UML Model",
+  "highlighted": true,
+  "abstract": "I-ADOPT UML model",
+  "status": "under-development",
+  "dateTimeAddition": "2025-02-16T00:00:00Z",
+  "itemClass": "model",
+  "register": "observable-properties",
+  "version": "0.1",
+  "dateOfLastChange": "2025-02-18",
+  "ontology": "ontology.ttl",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [],
+  "shaclRules": {},
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/observable-properties/undefined/_sources/iadopt-uml/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "## I-ADOPT UML model\n\nDocumentation for FAIR publication of the UML model for I-Adopt",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/ogcincubator/observable-properties",
+  "gitPath": "_sources/iadopt-uml"
+}

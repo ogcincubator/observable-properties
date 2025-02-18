@@ -1,0 +1,10 @@
+Validation report for ogc.oms.obs-props.iadopt-schema - ObservableProperties JSON schema
+Generated 2025-02-18T17:51:45.891274+00:00
+=== Files ===
+Using example_1_1.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
