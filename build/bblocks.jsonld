@@ -106,7 +106,7 @@
   "name": "Building Blocks - Observable Properties Descriptions",
   "abstract": "Building blocks to define schema and ontology options for description of observable properties and how these may be used to augment other standards.\n",
   "description": "Based on I-ADOPT model, with simpler fallbacks as required.\n",
-  "modified": "2025-02-18T17:54:56.396074",
+  "modified": "2025-02-18T18:20:02.900942",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"4628215f9c0319ef7d8ac960fb2adce65165b859",
@@ -131,7 +131,6 @@
     {
       "itemIdentifier": "ogc.oms.obs-props.iadopt-uml",
       "name": "I-ADOPT UML Model",
-      "highlighted": true,
       "abstract": "I-ADOPT UML model",
       "status": "under-development",
       "dateTimeAddition": "2025-02-16T00:00:00Z",
@@ -235,7 +234,8 @@
     },
     {
       "itemIdentifier": "ogc.oms.obs-props.iadopt-schema",
-      "name": "ObservableProperties JSON schema",
+      "name": "I-Adopt JSON schema - original",
+      "highlighted": true,
       "abstract": "Defines a JSON schema for observable properties - based on the I-ADOPT model",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
@@ -292,12 +292,13 @@
     {
       "itemIdentifier": "ogc.oms.obs-props.obs-props-schema",
       "name": "ObservableProperties JSON schema",
+      "highlighted": true,
       "abstract": "Local copy for working",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
-      "version": "1.0",
+      "version": "1.1",
       "dateOfLastChange": "2025-02-18",
       "sources": [
         {
@@ -317,7 +318,7 @@
         "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.yaml",
         "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/schema.yaml",
+      "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/schema.json",
       "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/",
       "rdfData": [],
       "validationPassed": true,

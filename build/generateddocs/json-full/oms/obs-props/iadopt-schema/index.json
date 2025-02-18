@@ -2,7 +2,8 @@
 
 {
   "itemIdentifier": "ogc.oms.obs-props.iadopt-schema",
-  "name": "ObservableProperties JSON schema",
+  "name": "I-Adopt JSON schema - original",
+  "highlighted": true,
   "abstract": "Defines a JSON schema for observable properties - based on the I-ADOPT model",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",

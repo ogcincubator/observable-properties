@@ -1,5 +1,5 @@
 
-# ObservableProperties JSON schema (Schema)
+# I-Adopt JSON schema - original (Schema)
 
 `ogc.oms.obs-props.iadopt-schema` *v1.0*
 

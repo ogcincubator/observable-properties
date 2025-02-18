@@ -1,5 +1,5 @@
 Validation report for ogc.oms.obs-props.iadopt-ontology - I-ADOPT Ontology
-Generated 2025-02-18T17:54:56.864852+00:00
+Generated 2025-02-18T18:20:04.040502+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created
@@ -23,6 +23,12 @@ Validation result for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/ref
   	Value Node: envthes:23
   	Result Path: iadopt:constrains
   	Message: Value does not have class iadopt:Entity
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class iadopt:Property ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasProperty ]
+  	Focus Node: envthes:30333
+  	Result Path: iadopt:hasProperty
+  	Message: Less than 1 values on envthes:30333->iadopt:hasProperty
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: [ sh:class iadopt:Property ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasProperty ]
@@ -32,10 +38,10 @@ Validation result for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/ref
   	Message: Value does not have class iadopt:Property
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: [ sh:class iadopt:Property ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasProperty ]
+  	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]
   	Focus Node: envthes:30333
-  	Result Path: iadopt:hasProperty
-  	Message: Less than 1 values on envthes:30333->iadopt:hasProperty
+  	Result Path: iadopt:hasObjectOfInterest
+  	Message: Less than 1 values on envthes:30333->iadopt:hasObjectOfInterest
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]
@@ -43,12 +49,6 @@ Validation result for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/ref
   	Value Node: envthes:23
   	Result Path: iadopt:hasObjectOfInterest
   	Message: Value does not have class iadopt:Entity
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasObjectOfInterest ]
-  	Focus Node: envthes:30333
-  	Result Path: iadopt:hasObjectOfInterest
-  	Message: Less than 1 values on envthes:30333->iadopt:hasObjectOfInterest
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: [ sh:class iadopt:Entity ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:path iadopt:hasMatrix ]
@@ -58,11 +58,11 @@ Validation result for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/ref
   	Message: Value does not have class iadopt:Entity
   
 Focus nodes for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl:
- - Shape iadopt:ConstraintShape: envthes:30375
  - Shape iadopt:VariableSetShape: *none*
- - Shape iadopt:EntityShape: *none*
- - Shape iadopt:VariableShape: envthes:30377,envthes:30333
  - Shape iadopt:PropertyShape: *none*
+ - Shape iadopt:ConstraintShape: envthes:30375
+ - Shape iadopt:VariableShape: envthes:30333,envthes:30377
+ - Shape iadopt:EntityShape: *none*
 
 
 ** Validation error **
@@ -84,7 +84,7 @@ Validation result for https://raw.githubusercontent.com/SirkoS/iadopt-schema/ref
   	Message: Variable needs to have exactly one ObjectOfInterest.
   
 Focus nodes for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:
- - Shape shape:VariableShape: envthes:30377,envthes:30333
+ - Shape shape:VariableShape: envthes:30333,envthes:30377
  - Shape shape:ConstraintShape: envthes:30375
 
 Validation result for _sources/iadopt-ontology/rules.shacl:

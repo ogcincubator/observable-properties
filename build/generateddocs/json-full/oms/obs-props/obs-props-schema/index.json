@@ -3,12 +3,13 @@
 {
   "itemIdentifier": "ogc.oms.obs-props.obs-props-schema",
   "name": "ObservableProperties JSON schema",
+  "highlighted": true,
   "abstract": "Local copy for working",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
-  "version": "1.0",
+  "version": "1.1",
   "dateOfLastChange": "2025-02-18",
   "sources": [
     {
@@ -28,7 +29,7 @@
     "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.yaml",
     "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/schema.yaml",
+  "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/schema.json",
   "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/obs-props-schema/",
   "rdfData": [],
   "validationPassed": true,
@@ -45,7 +46,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Original IADOPT schema\nallOf:\n- $ref: https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.schema.json\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  entity:\n    '@type': object\n    '@id': string\n    required:\n    - '@id'\n  constraint:\n    type: object\n    properties:\n      constrains:\n        '@type': string\n      '@type':\n        description: Type definition has to include iadopt:Constraint.\n        type:\n        - string\n        - array\n        items:\n          type: string\n        contains:\n          const: https://w3id.org/iadopt/ont/Constraint\n        pattern: https://w3id.org/iadopt/ont/Constraint\n    required:\n    - constrains\ntype: object\nproperties:\n  '@id':\n    type: string\n  '@type':\n    description: Type definition has to include iadopt:Variable.\n    type:\n    - string\n    - array\n    items:\n      type: string\n    contains:\n      const: https://w3id.org/iadopt/ont/Variable\n    pattern: https://w3id.org/iadopt/ont/Variable\n  property:\n    $ref: '#/$defs/entity'\n  ooi:\n    $ref: '#/$defs/entity'\n  objectofinterest:\n    $ref: '#/$defs/entity'\n  matrix:\n    $ref: '#/$defs/entity'\n  context:\n    description: contextObject can either be a single entity or an array of entities\n    anyOf:\n    - type: array\n      items:\n        $ref: '#/$defs/entity'\n    - $ref: '#/$defs/entity'\n  contextobject:\n    description: contextObject can either be a single entity or an array of entities\n    anyOf:\n    - type: array\n      items:\n        $ref: '#/$defs/entity'\n    - $ref: '#/$defs/entity'\n  constraint:\n    description: constraint can either be a single Constraint or an array of Constraints\n    anyOf:\n    - type: array\n      items:\n        $ref: '#/$defs/constraint'\n    - $ref: '#/$defs/constraint'\nallOf:\n- required:\n  - '@id'\n  - '@type'\n  - property\n- oneOf:\n  - required:\n    - context\n  - required:\n    - contextobject\n  - properties:\n      context:\n        not: {}\n      contextobject:\n        not: {}\n- oneOf:\n  - required:\n    - ooi\n  - required:\n    - objectofinterest\n",
   "gitRepository": "https://github.com/ogcincubator/observable-properties",
   "gitPath": "_sources/obs-props-schema"
 }

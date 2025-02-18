@@ -3,7 +3,6 @@
 {
   "itemIdentifier": "ogc.oms.obs-props.iadopt-uml",
   "name": "I-ADOPT UML Model",
-  "highlighted": true,
   "abstract": "I-ADOPT UML model",
   "status": "under-development",
   "dateTimeAddition": "2025-02-16T00:00:00Z",

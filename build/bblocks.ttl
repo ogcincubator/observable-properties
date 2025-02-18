@@ -34,15 +34,15 @@
 <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-schema> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "ObservableProperties JSON schema" ;
+    rdfs:label "I-Adopt JSON schema - original" ;
     dct:abstract "Defines a JSON schema for observable properties - based on the I-ADOPT model" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-schema/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2025-02-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
@@ -64,12 +64,12 @@
     rdfs:label "I-ADOPT UML Model" ;
     dct:abstract "I-ADOPT UML model" ;
     dct:created "2025-02-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-uml/index.md" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-uml" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-uml/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-uml" ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-uml/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-02-18"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -83,13 +83,13 @@
     rdfs:label "ObservableProperties JSON schema" ;
     dct:abstract "Local copy for working" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.obs-props-schema" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/obs-props-schema/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.obs-props-schema" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/obs-props-schema/index.md" ] ;
-    dct:hasVersion "1.0" ;
+    dct:hasVersion "1.1" ;
     dct:modified "2025-02-18"^^xsd:date ;
     dct:source <https://github.com/SirkoS/iadopt-schema/blob/main/json/> ;
     skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
@@ -119,14 +119,14 @@
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-02-18T17:54:56.987261"^^xsd:dateTime ;
-    prov:startedAtTime "2025-02-18T17:54:56.924967"^^xsd:dateTime ;
+    prov:endedAtTime "2025-02-18T18:20:04.185258"^^xsd:dateTime ;
+    prov:startedAtTime "2025-02-18T18:20:04.119319"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:b6d1ba13df3bf25cbe46c25d018b3ee30831ec12" ;
+            dct:hasVersion "git:33c8e95f8caa8153a38e39641fcd838493a50527" ;
             rdfs:seeAlso <https://ogcincubator.github.io/observable-properties/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
