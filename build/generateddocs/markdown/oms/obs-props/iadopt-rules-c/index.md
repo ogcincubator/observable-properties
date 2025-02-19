@@ -1,15 +1,28 @@
 
-# I-ADOPT Ontology (Model)
+# I-ADOPT SHACL - Crispae version (Model)
 
-`ogc.oms.obs-props.iadopt-ontology` *v0.1*
+`ogc.oms.obs-props.iadopt-rules-c` *v0.1*
 
-I-ADOPT ontologysource version
+Uses the proposed version to validate examples
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
-Source I-Adopt - to support testing against published version of ontology, and extension with rules, schemas, profiles etc.
+## Exercise 4
+
+Goal: Define a Building Block for a semantic data model
+
+This approach is appropriate where a given schema is one of many possible schemas for the same underlying semantic model, and allows defining the model and logical constraints independently, with re-usable validation rules and unit testing advantages.
+
+### Steps
+- uncomment line
+- examine file "ontology.ttl"
+- run build
+- run viewer
+- navigate to "Exercise 9"/Ontology and examine classes
+- view validation results on "about tab"
+- view validation results at [Validation Report](validation) or [build-local/...](/register/build-local/tests/bbr/template/exercise3/_report.json)
 ## Examples
 
 ### air temperature at 1.7 meter
@@ -81,11 +94,12 @@ envthes:23
 ## Sources
 
 * [Link to source](https://i-adopt.github.io/ontology)
+* [ALternative SHACL](https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl)
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/ogcincubator/observable-properties](https://github.com/ogcincubator/observable-properties)
-* Path: `_sources/iadopt-ontology`
+* Path: `_sources/iadopt-rules-c`
 

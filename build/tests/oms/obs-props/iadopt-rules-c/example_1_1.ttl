@@ -1,0 +1,78 @@
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix envthes: <http://vocabs.lter-europe.net/EnvThes/> .
+@prefix iadopt: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+iadopt:hasConstraint rdfs:label "hasConstraint" ;
+    rdfs:comment "A Variable has a Constraint, that confines an Entity involved in the observation." .
+
+iadopt:hasMatrix rdfs:label "hasMatrix" ;
+    rdfs:comment "A Variable might have an Entity in which the ObjectOfInterest is contained." ;
+    rdfs:subPropertyOf iadopt:hasContextObject .
+
+iadopt:hasObjectOfInterest rdfs:label "hasObjectOfInterest" ;
+    rdfs:comment "A Variable has an Entity whose Property is observed." .
+
+iadopt:hasProperty rdfs:label "hasProperty" ;
+    rdfs:comment "A Variable has a Property that characterizes an Entity." .
+
+envthes: a owl:Ontology,
+        skos:ConceptScheme ;
+    skos:prefLabel "EnvThes"@en .
+
+envthes:30333 a skos:Concept,
+        iadopt:Variable ;
+    skos:narrower envthes:30377 ;
+    skos:prefLabel "near-surface air temperature"@en .
+
+envthes:30375 a skos:Concept,
+        iadopt:Constraint ;
+    skos:prefLabel "1.7 meter above ground"@en ;
+    iadopt:constrains envthes:23 .
+
+envthes:30377 a skos:Concept,
+        iadopt:Variable ;
+    dc1:created "2024-10-14"^^xsd:date ;
+    dc1:modified "2024-10-14"^^xsd:date ;
+    skos:altLabel "temperature of air at 1.7 meter"@en ;
+    skos:broader envthes:30333 ;
+    skos:definition "Temperature of the air in a height of 1.7 meter"@en ;
+    skos:inScheme envthes: ;
+    skos:prefLabel "air temperature at 1.7 meter"@en ;
+    iadopt:hasConstraint envthes:30375 ;
+    iadopt:hasMatrix <https://vocabulary.actris.nilu.no/actris_vocab/troposphere> ;
+    iadopt:hasObjectOfInterest envthes:23 ;
+    iadopt:hasProperty <http://qudt.org/vocab/quantitykind/Temperature> .
+
+envthes:23 a skos:Concept ;
+    skos:prefLabel "هواء"@ar,
+        "Въздух"@bg,
+        "vzduch"@cs,
+        "luft"@da,
+        "Luft"@de,
+        "αέρας"@el,
+        "air"@en,
+        "aire"@es,
+        "õhk"@et,
+        "ilma"@fi,
+        "air"@fr,
+        "zrak"@hr,
+        "levegő"@hu,
+        "aria"@it,
+        "oras"@lt,
+        "gaiss"@lv,
+        "lucht"@nl,
+        "luft"@no,
+        "powietrze"@pl,
+        "ar"@pt,
+        "aer"@ro,
+        "vzduch"@sk,
+        "zrak"@sl,
+        "luft"@sv .
+
+iadopt:Variable a owl:Class ;
+    rdfs:label "Variable" .
+

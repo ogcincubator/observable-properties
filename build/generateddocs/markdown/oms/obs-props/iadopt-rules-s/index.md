@@ -1,15 +1,15 @@
 
-# I-ADOPT Ontology (Model)
+# I-ADOPT SHACL - Sirko version (Model)
 
-`ogc.oms.obs-props.iadopt-ontology` *v0.1*
+`ogc.oms.obs-props.iadopt-rules-s` *v0.1*
 
-I-ADOPT ontologysource version
+Sirko's validation rules - source version
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
-Source I-Adopt - to support testing against published version of ontology, and extension with rules, schemas, profiles etc.
+TBD
 ## Examples
 
 ### air temperature at 1.7 meter
@@ -87,5 +87,5 @@ envthes:23
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/ogcincubator/observable-properties](https://github.com/ogcincubator/observable-properties)
-* Path: `_sources/iadopt-ontology`
+* Path: `_sources/iadopt-rules-s`
 

@@ -7,27 +7,25 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-ontology> a skos:Concept,
+<https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-rules-c> a skos:Concept,
         dcat:Dataset,
         bblocks:Model ;
-    rdfs:label "I-ADOPT Ontology" ;
-    dct:abstract "I-ADOPT ontology and core validation rules - source version" ;
+    rdfs:label "I-ADOPT SHACL - Crispae version" ;
+    dct:abstract "Uses the proposed version to validate examples" ;
     dct:created "2025-02-16T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-ontology" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-rules-c" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-ontology/index.json" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-rules-c/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-ontology/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-rules-c/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-02-18"^^xsd:date ;
+    dct:modified "2025-02-19"^^xsd:date ;
     dct:source <https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl>,
         <https://i-adopt.github.io/ontology> ;
     skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
-    bblocks:dependsOn <https://ogcincubator.github.io/iadopt-uml> ;
-    bblocks:hasShaclRule <https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl>,
-        <https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl>,
-        <https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-ontology> ;
+    bblocks:hasShaclRule <https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -37,14 +35,14 @@
     rdfs:label "I-Adopt JSON schema - original" ;
     dct:abstract "Defines a JSON schema for observable properties - based on the I-ADOPT model" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-schema/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-02-18"^^xsd:date ;
+    dct:modified "2025-02-19"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
     dcat:keyword "examples",
         "geopose",
@@ -52,28 +50,11 @@
         "o&m&s",
         "observations",
         "sosa" ;
-    bblocks:dependsOn <https://ogcincubator.github.io/iadopt-uml> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-rules-s>,
+        <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-uml> ;
     bblocks:hasSchema <https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json>,
         <https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
-
-<https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-uml> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Model ;
-    rdfs:label "I-ADOPT UML Model" ;
-    dct:abstract "I-ADOPT UML model" ;
-    dct:created "2025-02-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-uml" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-uml/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-uml/index.md" ] ;
-    dct:hasVersion "0.1" ;
-    dct:modified "2025-02-18"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
+    bblocks:hasShaclRule <https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -90,10 +71,11 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/obs-props-schema/index.md" ] ;
     dct:hasVersion "1.1" ;
-    dct:modified "2025-02-18"^^xsd:date ;
+    dct:modified "2025-02-19"^^xsd:date ;
     dct:source <https://github.com/SirkoS/iadopt-schema/blob/main/json/> ;
     skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
-    bblocks:dependsOn <https://ogcincubator.github.io/iadopt-uml> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-uml>,
+        <https://ogcincubator.github.io/ogc.oms.obs-props.ontology> ;
     bblocks:hasSchema <https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.json>,
         <https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/obs-props-schema/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -105,7 +87,69 @@
 
 <https://github.com/SirkoS/iadopt-schema/blob/main/json/> rdfs:label "Original" .
 
+<https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-rules-s> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "I-ADOPT SHACL - Sirko version" ;
+    dct:abstract "Sirko's validation rules - source version" ;
+    dct:created "2025-02-16T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-rules-s/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-rules-s/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-rules-s" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-02-19"^^xsd:date ;
+    dct:source <https://i-adopt.github.io/ontology> ;
+    skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-ontology> ;
+    bblocks:hasShaclRule <https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-ontology> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "I-ADOPT Ontology" ;
+    dct:abstract "I-ADOPT ontologysource version" ;
+    dct:created "2025-02-16T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-ontology/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-ontology/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-ontology" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-02-19"^^xsd:date ;
+    dct:source <https://i-adopt.github.io/ontology> ;
+    skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-uml>,
+        <https://ogcincubator.github.io/ogc.oms.obs-props.skos-cdif>,
+        <https://ogcincubator.github.io/ogc.oms.obs-props.skos-shared> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
 <https://i-adopt.github.io/ontology> rdfs:label "Link to source" .
+
+<https://ogcincubator.github.io/ogc.oms.obs-props.iadopt-uml> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "I-ADOPT UML Model" ;
+    dct:abstract "I-ADOPT UML model - placeholder for eventual derivation from UML" ;
+    dct:created "2025-02-16T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-uml/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-uml" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-uml/index.json" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-02-19"^^xsd:date ;
+    dct:source <https://example.com/sources/1> ;
+    skos:inScheme <https://ogcincubator.github.io/observable-properties/> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/observable-properties/> a skos:ConceptScheme,
         dcat:Catalog ;
@@ -119,15 +163,15 @@
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-02-18T18:20:04.185258"^^xsd:dateTime ;
-    prov:startedAtTime "2025-02-18T18:20:04.119319"^^xsd:dateTime ;
+    prov:endedAtTime "2025-02-19T07:35:48.671980"^^xsd:dateTime ;
+    prov:startedAtTime "2025-02-19T07:35:48.606318"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:33c8e95f8caa8153a38e39641fcd838493a50527" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/observable-properties/build/register.json> ] ;
+            dct:hasVersion "git:90bd6d854d545ba04ccb2664622ca2eddbc199f9" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/observable-properties/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

@@ -3,13 +3,13 @@
 {
   "itemIdentifier": "ogc.oms.obs-props.iadopt-uml",
   "name": "I-ADOPT UML Model",
-  "abstract": "I-ADOPT UML model",
+  "abstract": "I-ADOPT UML model - placeholder for eventual derivation from UML",
   "status": "under-development",
   "dateTimeAddition": "2025-02-16T00:00:00Z",
   "itemClass": "model",
   "register": "observable-properties",
   "version": "0.1",
-  "dateOfLastChange": "2025-02-18",
+  "dateOfLastChange": "2025-02-19",
   "ontology": "ontology.ttl",
   "sources": [
     {

@@ -1,0 +1,37 @@
+Validation report for ogc.oms.obs-props.iadopt-rules-s - I-ADOPT SHACL - Sirko version
+Generated 2025-02-19T07:35:48.331275+00:00
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== Turtle ===
+Prefixes are defined for mynamespace
+=== End Turtle ===
+
+=== SHACL ===
+
+** Validation error **
+Validation result for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:
+  Validation Report
+  Conforms: False
+  Results (2):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Variable needs to have exactly one Property.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:nodeKind sh:IRI ; sh:path iadopt:hasProperty ]
+  	Focus Node: envthes:30333
+  	Result Path: iadopt:hasProperty
+  	Message: Variable needs to have exactly one Property.
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Variable needs to have exactly one ObjectOfInterest.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:nodeKind sh:IRI ; sh:path iadopt:hasObjectOfInterest ]
+  	Focus Node: envthes:30333
+  	Result Path: iadopt:hasObjectOfInterest
+  	Message: Variable needs to have exactly one ObjectOfInterest.
+  
+Focus nodes for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:
+ - Shape shape:ConstraintShape: envthes:30375
+ - Shape shape:VariableShape: envthes:30377,envthes:30333
+
+=== End SHACL ===
+
