@@ -1,0 +1,12 @@
+$schema: https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/refs/heads/master/ogc/bblocks/schemas/examples.schema.yaml
+## Prefixes for examples
+prefixes:
+  mynamespace: http://example.org/ns1/
+## List of examples
+examples:
+- title: air temperature at 1.7 meter
+
+  snippets:
+    - language: ttl
+      ref: https://i-adopt.github.io/examples/Challenge/2.ttl
+

@@ -1,16 +1,16 @@
 {
-  "name": "I-ADOPT Ontology",
+  "name": "I-ADOPT SHACL - Sirko version",
   "highlighted": true,
-  "abstract": "I-ADOPT ontologysource version",
+  "abstract": "Sirko's validation rules - source version",
   "status": "under-development",
   "dateTimeAddition": "2025-02-16T00:00:00Z",
   "itemClass": "model",
   "register": "observable-properties",
   "version": "0.1",
   "dateOfLastChange": "2023-04-05",
-  "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
-   "dependsOn": [ "ogc.oms.obs-props.iadopt-uml", "ogc.oms.obs-props.skos-cdif", "ogc.oms.obs-props.skos-shared"
+   "dependsOn": [ "ogc.oms.obs-props.iadopt-ontology"
   ],
+  "shaclRules": [ "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"],
   "sources": [
     {
       "title": "Link to source",

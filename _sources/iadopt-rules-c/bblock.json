@@ -1,0 +1,28 @@
+{
+  "name": "I-ADOPT SHACL - Crispae version",
+  "highlighted": true,
+  "abstract": "Uses the proposed version to validate examples",
+  "status": "under-development",
+  "dateTimeAddition": "2025-02-16T00:00:00Z",
+  "itemClass": "model",
+  "register": "observable-properties",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+   "dependsOn": [ "ogc.oms.obs-props.iadopt-ontology"
+  ],
+  "shaclRules": [ "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl" ],
+  "sources": [
+    {
+      "title": "Link to source",
+      "link": "https://i-adopt.github.io/ontology"
+    },
+    {
+      "title": "ALternative SHACL",
+      "link": "https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+  ]
+}

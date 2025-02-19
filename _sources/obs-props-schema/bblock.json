@@ -17,7 +17,7 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "iadopt-uml"
+    "ogc.oms.obs-props.iadopt-uml", "ogc.oms.obs-props.ontology"
   ],
   "tags": [
   ],
