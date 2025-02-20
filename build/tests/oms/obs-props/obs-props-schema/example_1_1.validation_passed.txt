@@ -1,5 +1,5 @@
 Validation report for ogc.oms.obs-props.obs-props-schema - ObservableProperties JSON schema
-Generated 2025-02-19T07:35:47.800292+00:00
+Generated 2025-02-20T07:33:49.660185+00:00
 === Files ===
 Using example_1_1.json from examples
 === End Files ===

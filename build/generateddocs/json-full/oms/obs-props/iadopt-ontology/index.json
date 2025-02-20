@@ -10,11 +10,11 @@
   "itemClass": "model",
   "register": "observable-properties",
   "version": "0.1",
-  "dateOfLastChange": "2025-02-19",
+  "dateOfLastChange": "2025-02-20",
   "dependsOn": [
-    "ogc.oms.obs-props.skos-shared",
-    "ogc.oms.obs-props.skos-cdif",
-    "ogc.oms.obs-props.iadopt-uml"
+    "ogc.skos.concept",
+    "ogc.oms.obs-props.iadopt-uml",
+    "ogc.oms.obs-props.skos-cdif"
   ],
   "sources": [
     {
@@ -25,7 +25,14 @@
   "maturity": "mature",
   "scope": "unstable",
   "tags": [],
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
   "remoteCacheDir": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-ontology/remote_cache/",
   "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/",

@@ -10,13 +10,13 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-02-19",
+  "dateOfLastChange": "2025-02-20",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.oms.obs-props.iadopt-rules-s",
-    "ogc.oms.obs-props.iadopt-uml"
+    "ogc.oms.obs-props.iadopt-uml",
+    "ogc.oms.obs-props.iadopt-rules-s"
   ],
   "context": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.context.jsonld",
   "tags": [
@@ -31,6 +31,12 @@
   "shaclRules": {
     "ogc.oms.obs-props.iadopt-rules-s": [
       "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
+    ],
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
     ]
   },
   "schema": {
