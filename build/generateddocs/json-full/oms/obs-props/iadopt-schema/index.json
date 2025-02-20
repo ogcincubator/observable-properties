@@ -10,12 +10,13 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-02-18",
+  "dateOfLastChange": "2025-02-19",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "iadopt-uml"
+    "ogc.oms.obs-props.iadopt-rules-s",
+    "ogc.oms.obs-props.iadopt-uml"
   ],
   "context": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.context.jsonld",
   "tags": [
@@ -27,7 +28,11 @@
     "geopose"
   ],
   "group": "Examples",
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.oms.obs-props.iadopt-rules-s": [
+      "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
+    ]
+  },
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
     "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json"

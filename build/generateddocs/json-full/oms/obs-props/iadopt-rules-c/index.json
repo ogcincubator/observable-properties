@@ -1,10 +1,10 @@
 
 
 {
-  "itemIdentifier": "ogc.oms.obs-props.iadopt-ontology",
-  "name": "I-ADOPT Ontology",
+  "itemIdentifier": "ogc.oms.obs-props.iadopt-rules-c",
+  "name": "I-ADOPT SHACL - Crispae version",
   "highlighted": true,
-  "abstract": "I-ADOPT ontologysource version",
+  "abstract": "Uses the proposed version to validate examples",
   "status": "under-development",
   "dateTimeAddition": "2025-02-16T00:00:00Z",
   "itemClass": "model",
@@ -12,27 +12,31 @@
   "version": "0.1",
   "dateOfLastChange": "2025-02-19",
   "dependsOn": [
-    "ogc.oms.obs-props.skos-shared",
-    "ogc.oms.obs-props.skos-cdif",
-    "ogc.oms.obs-props.iadopt-uml"
+    "ogc.oms.obs-props.iadopt-ontology"
   ],
+  "shaclRules": {
+    "ogc.oms.obs-props.iadopt-rules-c": [
+      "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl"
+    ]
+  },
   "sources": [
     {
       "title": "Link to source",
       "link": "https://i-adopt.github.io/ontology"
+    },
+    {
+      "title": "ALternative SHACL",
+      "link": "https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl"
     }
   ],
   "maturity": "mature",
   "scope": "unstable",
   "tags": [],
-  "shaclRules": {},
-  "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
-  "remoteCacheDir": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-ontology/remote_cache/",
-  "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/",
+  "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-rules-c/",
   "rdfData": [],
-  "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-ontology/",
-  "description": "Source I-Adopt - to support testing against published version of ontology, and extension with rules, schemas, profiles etc.",
+  "validationPassed": false,
+  "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-rules-c/",
+  "description": "## Exercise 4\n\nGoal: Define a Building Block for a semantic data model\n\nThis approach is appropriate where a given schema is one of many possible schemas for the same underlying semantic model, and allows defining the model and logical constraints independently, with re-usable validation rules and unit testing advantages.\n\n### Steps\n- uncomment line\n- examine file \"ontology.ttl\"\n- run build\n- run viewer\n- navigate to \"Exercise 9\"/Ontology and examine classes\n- view validation results on \"about tab\"\n- view validation results at [Validation Report](validation) or [build-local/...](/register/build-local/tests/bbr/template/exercise3/_report.json)",
   "examples": [
     {
       "title": "air temperature at 1.7 meter",
@@ -41,7 +45,7 @@
           "language": "ttl",
           "ref": "https://i-adopt.github.io/examples/Challenge/2.ttl",
           "code": "@prefix iadopt: <https://w3id.org/iadopt/ont/> .\r\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\r\n@prefix envthes: <http://vocabs.lter-europe.net/EnvThes/> .\r\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\r\n@prefix dc: <http://purl.org/dc/terms/> .\r\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\r\n\r\niadopt:Variable\r\n  rdfs:label \"Variable\" ;\r\n  a owl:Class .\r\n\r\niadopt:hasProperty\r\n  rdfs:comment \"A Variable has a Property that characterizes an Entity.\" ;\r\n  rdfs:label \"hasProperty\" .\r\n\r\niadopt:hasMatrix\r\n  rdfs:subPropertyOf iadopt:hasContextObject ;\r\n  rdfs:comment \"A Variable might have an Entity in which the ObjectOfInterest is contained.\" ;\r\n  rdfs:label \"hasMatrix\" .\r\n\r\nenvthes:\r\n  skos:prefLabel \"EnvThes\"@en ;\r\n  a owl:Ontology, skos:ConceptScheme .\r\n\r\niadopt:hasObjectOfInterest\r\n  rdfs:comment \"A Variable has an Entity whose Property is observed.\" ;\r\n  rdfs:label \"hasObjectOfInterest\" .\r\n\r\nenvthes:30377\r\n  skos:inScheme envthes: ;\r\n  skos:altLabel \"temperature of air at 1.7 meter\"@en ;\r\n  dc:modified \"2024-10-14\"^^xsd:date ;\r\n  dc:created \"2024-10-14\"^^xsd:date ;\r\n  iadopt:hasProperty <http://qudt.org/vocab/quantitykind/Temperature> ;\r\n  skos:definition \"Temperature of the air in a height of 1.7 meter\"@en ;\r\n  iadopt:hasConstraint envthes:30375 ;\r\n  iadopt:hasMatrix <https://vocabulary.actris.nilu.no/actris_vocab/troposphere> ;\r\n  skos:broader envthes:30333 ;\r\n  iadopt:hasObjectOfInterest envthes:23 ;\r\n  a iadopt:Variable, skos:Concept ;\r\n  skos:prefLabel \"air temperature at 1.7 meter\"@en .\r\n\r\niadopt:hasConstraint\r\n  rdfs:comment \"A Variable has a Constraint, that confines an Entity involved in the observation.\" ;\r\n  rdfs:label \"hasConstraint\" .\r\n\r\nenvthes:30333\r\n  skos:prefLabel \"near-surface air temperature\"@en ;\r\n  a iadopt:Variable, skos:Concept ;\r\n  skos:narrower envthes:30377 .\r\n\r\nenvthes:30375\r\n  skos:prefLabel \"1.7 meter above ground\"@en ;\r\n  a iadopt:Constraint, skos:Concept ;\r\n  iadopt:constrains envthes:23 .\r\n\r\nenvthes:23\r\n  skos:prefLabel \"\u03b1\u03ad\u03c1\u03b1\u03c2\"@el, \"oras\"@lt, \"vzduch\"@sk, \"vzduch\"@cs, \"ilma\"@fi, \"\u00f5hk\"@et, \"ar\"@pt, \"air\"@fr, \"air\"@en, \"luft\"@sv, \"luft\"@no, \"luft\"@da, \"powietrze\"@pl, \"\u0647\u0648\u0627\u0621\"@ar, \"Luft\"@de, \"\u0412\u044a\u0437\u0434\u0443\u0445\"@bg, \"lucht\"@nl, \"aer\"@ro, \"aire\"@es, \"zrak\"@sl, \"zrak\"@hr, \"aria\"@it, \"leveg\u0151\"@hu, \"gaiss\"@lv ;\r\n  a skos:Concept .\r\n",
-          "url": "https://ogcincubator.github.io/observable-properties/build/tests/oms/obs-props/iadopt-ontology/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/observable-properties/build/tests/oms/obs-props/iadopt-rules-c/example_1_1.ttl"
         }
       ],
       "prefixes": {
@@ -54,5 +58,5 @@
   },
   "annotatedSchema": null,
   "gitRepository": "https://github.com/ogcincubator/observable-properties",
-  "gitPath": "_sources/iadopt-ontology"
+  "gitPath": "_sources/iadopt-rules-c"
 }

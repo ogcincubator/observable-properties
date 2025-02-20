@@ -3,7 +3,7 @@
 
 `ogc.oms.obs-props.iadopt-uml` *v0.1*
 
-I-ADOPT UML model
+I-ADOPT UML model - placeholder for eventual derivation from UML
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

@@ -2,7 +2,7 @@
   "name": "Observable Properties Descriptions",
   "abstract": "Building blocks to define schema and ontology options for description of observable properties and how these may be used to augment other standards.\n",
   "description": "Based on I-ADOPT model, with simpler fallbacks as required.\n",
-  "modified": "2025-02-18T18:20:02.900942",
+  "modified": "2025-02-19T07:35:46.534819",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"4628215f9c0319ef7d8ac960fb2adce65165b859",
@@ -22,13 +22,13 @@
     {
       "itemIdentifier": "ogc.oms.obs-props.iadopt-uml",
       "name": "I-ADOPT UML Model",
-      "abstract": "I-ADOPT UML model",
+      "abstract": "I-ADOPT UML model - placeholder for eventual derivation from UML",
       "status": "under-development",
       "dateTimeAddition": "2025-02-16T00:00:00Z",
       "itemClass": "model",
       "register": "observable-properties",
       "version": "0.1",
-      "dateOfLastChange": "2025-02-18",
+      "dateOfLastChange": "2025-02-19",
       "ontology": "ontology.ttl",
       "sources": [
         {
@@ -62,41 +62,33 @@
       "itemIdentifier": "ogc.oms.obs-props.iadopt-ontology",
       "name": "I-ADOPT Ontology",
       "highlighted": true,
-      "abstract": "I-ADOPT ontology and core validation rules - source version",
+      "abstract": "I-ADOPT ontologysource version",
       "status": "under-development",
       "dateTimeAddition": "2025-02-16T00:00:00Z",
       "itemClass": "model",
       "register": "observable-properties",
       "version": "0.1",
-      "dateOfLastChange": "2025-02-18",
+      "dateOfLastChange": "2025-02-19",
       "dependsOn": [
-        "iadopt-uml"
+        "ogc.oms.obs-props.skos-shared",
+        "ogc.oms.obs-props.skos-cdif",
+        "ogc.oms.obs-props.iadopt-uml"
       ],
-      "shaclRules": {
-        "ogc.oms.obs-props.iadopt-ontology": [
-          "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl",
-          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
-          "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/rules.shacl"
-        ]
-      },
       "sources": [
         {
           "title": "Link to source",
           "link": "https://i-adopt.github.io/ontology"
-        },
-        {
-          "title": "ALternative SHACL",
-          "link": "https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl"
         }
       ],
       "maturity": "mature",
       "scope": "unstable",
       "tags": [],
+      "shaclRules": {},
       "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
       "remoteCacheDir": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-ontology/remote_cache/",
       "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-ontology/",
       "rdfData": [],
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-ontology/",
       "documentation": {
         "markdown": {
@@ -114,58 +106,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.oms.obs-props.iadopt-schema",
-      "name": "I-Adopt JSON schema - original",
-      "highlighted": true,
-      "abstract": "Defines a JSON schema for observable properties - based on the I-ADOPT model",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2025-02-18",
-      "sources": [],
-      "maturity": "development",
-      "scope": "unstable",
-      "dependsOn": [
-        "iadopt-uml"
-      ],
-      "context": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.context.jsonld",
-      "tags": [
-        "examples",
-        "sosa",
-        "observations",
-        "o&m",
-        "o&m&s",
-        "geopose"
-      ],
-      "group": "Examples",
-      "shaclRules": {},
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/schema.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-schema/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-schema/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.oms.obs-props.obs-props-schema",
       "name": "ObservableProperties JSON schema",
       "highlighted": true,
@@ -175,7 +115,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.1",
-      "dateOfLastChange": "2025-02-18",
+      "dateOfLastChange": "2025-02-19",
       "sources": [
         {
           "title": "Original",
@@ -185,7 +125,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "iadopt-uml"
+        "ogc.oms.obs-props.ontology",
+        "ogc.oms.obs-props.iadopt-uml"
       ],
       "tags": [],
       "group": "Examples",
@@ -211,6 +152,161 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.obs-props-schema"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.oms.obs-props.iadopt-rules-c",
+      "name": "I-ADOPT SHACL - Crispae version",
+      "highlighted": true,
+      "abstract": "Uses the proposed version to validate examples",
+      "status": "under-development",
+      "dateTimeAddition": "2025-02-16T00:00:00Z",
+      "itemClass": "model",
+      "register": "observable-properties",
+      "version": "0.1",
+      "dateOfLastChange": "2025-02-19",
+      "dependsOn": [
+        "ogc.oms.obs-props.iadopt-ontology"
+      ],
+      "shaclRules": {
+        "ogc.oms.obs-props.iadopt-rules-c": [
+          "https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Link to source",
+          "link": "https://i-adopt.github.io/ontology"
+        },
+        {
+          "title": "ALternative SHACL",
+          "link": "https://github.com/Crispae/IADOPT-shacl/blob/main/shapes/iadopt-shapes.ttl"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [],
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-rules-c/",
+      "rdfData": [],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-rules-c/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-rules-c/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-rules-c/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-rules-c"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.oms.obs-props.iadopt-rules-s",
+      "name": "I-ADOPT SHACL - Sirko version",
+      "highlighted": true,
+      "abstract": "Sirko's validation rules - source version",
+      "status": "under-development",
+      "dateTimeAddition": "2025-02-16T00:00:00Z",
+      "itemClass": "model",
+      "register": "observable-properties",
+      "version": "0.1",
+      "dateOfLastChange": "2025-02-19",
+      "dependsOn": [
+        "ogc.oms.obs-props.iadopt-ontology"
+      ],
+      "shaclRules": {
+        "ogc.oms.obs-props.iadopt-rules-s": [
+          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Link to source",
+          "link": "https://i-adopt.github.io/ontology"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [],
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-rules-s/",
+      "rdfData": [],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-rules-s/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-rules-s/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-rules-s/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-rules-s"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.oms.obs-props.iadopt-schema",
+      "name": "I-Adopt JSON schema - original",
+      "highlighted": true,
+      "abstract": "Defines a JSON schema for observable properties - based on the I-ADOPT model",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2025-02-19",
+      "sources": [],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.oms.obs-props.iadopt-rules-s",
+        "ogc.oms.obs-props.iadopt-uml"
+      ],
+      "context": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/json/Variable.context.jsonld",
+      "tags": [
+        "examples",
+        "sosa",
+        "observations",
+        "o&m",
+        "o&m&s",
+        "geopose"
+      ],
+      "group": "Examples",
+      "shaclRules": {
+        "ogc.oms.obs-props.iadopt-rules-s": [
+          "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
+        ]
+      },
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/observable-properties/build/annotated/oms/obs-props/iadopt-schema/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/schema.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/observable-properties/_sources/iadopt-schema/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/observable-properties/blob/master/build/tests/oms/obs-props/iadopt-schema/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/markdown/oms/obs-props/iadopt-schema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/observable-properties/build/generateddocs/json-full/oms/obs-props/iadopt-schema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/observable-properties/bblock/ogc.oms.obs-props.iadopt-schema"
         }
       }
     }

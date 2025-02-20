@@ -1,0 +1,11 @@
+Validation report for ogc.oms.obs-props.iadopt-ontology - I-ADOPT Ontology
+Generated 2025-02-19T07:35:47.784967+00:00
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== Turtle ===
+Prefixes are defined for mynamespace
+=== End Turtle ===
+
