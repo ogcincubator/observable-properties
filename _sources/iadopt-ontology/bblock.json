@@ -9,7 +9,7 @@
   "version": "0.1",
   "dateOfLastChange": "2023-04-05",
   "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
-   "dependsOn": [ "ogc.oms.obs-props.iadopt-uml", "ogc.oms.obs-props.skos-cdif", "ogc.oms.obs-props.skos-shared"
+   "dependsOn": [ "ogc.oms.obs-props.iadopt-uml", "ogc.oms.obs-props.skos-cdif", "ogc.skos.concept"
   ],
   "sources": [
     {

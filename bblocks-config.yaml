@@ -14,6 +14,7 @@ identifier-prefix: ogc.oms.obs-props.
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://ogcincubator.github.io/bblocks-skos
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version
