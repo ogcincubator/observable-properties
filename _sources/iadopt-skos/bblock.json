@@ -1,7 +1,8 @@
 {
-  "name": "I-ADOPT Ontology",
+  "name": "I-ADOPT SKOS Profile",
   "highlighted": true,
-  "abstract": "I-ADOPT ontology source version",
+  "abstract": "I-ADOPT Ontology extended with SKOS semantics",
+  "description": "I-Adopt can be extended with SKOS to provide relationships between different terms, collections and management metadata in ConceptSchemes",
   "status": "under-development",
   "dateTimeAddition": "2025-02-16T00:00:00Z",
   "itemClass": "model",
@@ -9,7 +10,7 @@
   "version": "0.1",
   "dateOfLastChange": "2023-04-05",
   "ontology": "https://i-adopt.github.io/ontology/ontology.ttl",
-   "dependsOn": [ "ogc.oms.obs-props.iadopt-uml"
+   "dependsOn": [ "ogc.oms.iadopt-ontology", "ogc.oms.obs-props.skos-cdif", "ogc.skos.concept"
   ],
   "sources": [
     {
