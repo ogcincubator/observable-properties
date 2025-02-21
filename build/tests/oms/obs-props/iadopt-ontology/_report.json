@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.oms.obs-props.iadopt-ontology - I-ADOPT Ontology",
   "bblockName": "I-ADOPT Ontology",
   "bblockId": "ogc.oms.obs-props.iadopt-ontology",
-  "generated": "2025-02-20T07:33:50.037955+00:00",
+  "generated": "2025-02-21T09:21:39.709817+00:00",
   "result": true,
   "items": [
     {
@@ -43,52 +43,6 @@
             {
               "isError": false,
               "message": "Prefixes are defined for mynamespace"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl",
-              "focusNodes": {
-                ":relatedDisjointWithBroaderTransitive": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:\n - Shape :relatedDisjointWithBroaderTransitive: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl",
-              "focusNodes": {
-                ":singlePrefLabel": {
-                  "nodes": [
-                    "envthes:30375",
-                    "envthes:",
-                    "envthes:23",
-                    "envthes:30377",
-                    "envthes:30333"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:\n - Shape :singlePrefLabel: envthes:30375,envthes:,envthes:23,envthes:30377,envthes:30333\n"
             }
           ]
         }

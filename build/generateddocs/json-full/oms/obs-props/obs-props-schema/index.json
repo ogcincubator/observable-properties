@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.1",
-  "dateOfLastChange": "2025-02-20",
+  "dateOfLastChange": "2025-02-21",
   "sources": [
     {
       "title": "Original",
@@ -20,8 +20,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.oms.obs-props.iadopt-uml",
-    "ogc.oms.obs-props.ontology"
+    "ogc.oms.obs-props.ontology",
+    "ogc.oms.obs-props.iadopt-uml"
   ],
   "tags": [],
   "group": "Examples",

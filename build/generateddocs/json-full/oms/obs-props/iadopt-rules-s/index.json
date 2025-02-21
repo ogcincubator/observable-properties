@@ -10,19 +10,13 @@
   "itemClass": "model",
   "register": "observable-properties",
   "version": "0.1",
-  "dateOfLastChange": "2025-02-20",
+  "dateOfLastChange": "2025-02-21",
   "dependsOn": [
     "ogc.oms.obs-props.iadopt-ontology"
   ],
   "shaclRules": {
     "ogc.oms.obs-props.iadopt-rules-s": [
       "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl"
-    ],
-    "ogc.skos.concept": [
-      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
-    ],
-    "ogc.skos.common": [
-      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
     ]
   },
   "sources": [

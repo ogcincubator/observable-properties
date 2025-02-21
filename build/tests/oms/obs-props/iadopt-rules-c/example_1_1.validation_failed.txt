@@ -1,5 +1,5 @@
 Validation report for ogc.oms.obs-props.iadopt-rules-c - I-ADOPT SHACL - Crispae version
-Generated 2025-02-20T07:33:50.372199+00:00
+Generated 2025-02-21T09:21:40.034900+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created
@@ -59,24 +59,10 @@ Validation result for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/ref
   
 Focus nodes for https://raw.githubusercontent.com/Crispae/IADOPT-shacl/refs/heads/main/shapes/iadopt-shapes.ttl:
  - Shape iadopt:VariableSetShape: *none*
+ - Shape iadopt:EntityShape: *none*
  - Shape iadopt:ConstraintShape: envthes:30375
  - Shape iadopt:PropertyShape: *none*
- - Shape iadopt:EntityShape: *none*
- - Shape iadopt:VariableShape: envthes:30377,envthes:30333
-
-Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:
- - Shape :relatedDisjointWithBroaderTransitive: *none*
-
-Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:
- - Shape :singlePrefLabel: envthes:30375,envthes:,envthes:23,envthes:30377,envthes:30333
+ - Shape iadopt:VariableShape: envthes:30333,envthes:30377
 
 === End SHACL ===
 

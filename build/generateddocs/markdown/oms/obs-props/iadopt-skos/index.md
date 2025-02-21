@@ -1,9 +1,9 @@
 
-# I-ADOPT Ontology (Model)
+# I-ADOPT SKOS Profile (Model)
 
-`ogc.oms.obs-props.iadopt-ontology` *v0.1*
+`ogc.oms.obs-props.iadopt-skos` *v0.1*
 
-I-ADOPT ontology source version
+I-ADOPT Ontology extended with SKOS semantics
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -87,5 +87,5 @@ envthes:23
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/ogcincubator/observable-properties](https://github.com/ogcincubator/observable-properties)
-* Path: `_sources/iadopt-ontology`
+* Path: `_sources/iadopt-skos`
 

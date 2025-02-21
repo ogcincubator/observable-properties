@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "observable-properties",
   "version": "0.1",
-  "dateOfLastChange": "2025-02-20",
+  "dateOfLastChange": "2025-02-21",
   "ontology": "ontology.ttl",
   "sources": [
     {

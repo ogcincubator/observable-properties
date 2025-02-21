@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.oms.obs-props.iadopt-rules-s - I-ADOPT SHACL - Sirko version",
   "bblockName": "I-ADOPT SHACL - Sirko version",
   "bblockId": "ogc.oms.obs-props.iadopt-rules-s",
-  "generated": "2025-02-20T07:33:50.737954+00:00",
+  "generated": "2025-02-21T09:21:40.342539+00:00",
   "result": false,
   "items": [
     {
@@ -60,60 +60,20 @@
             {
               "shaclFile": "https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl",
               "focusNodes": {
+                "shape:VariableShape": {
+                  "nodes": [
+                    "envthes:30333",
+                    "envthes:30377"
+                  ]
+                },
                 "shape:ConstraintShape": {
                   "nodes": [
                     "envthes:30375"
                   ]
-                },
-                "shape:VariableShape": {
-                  "nodes": [
-                    "envthes:30377",
-                    "envthes:30333"
-                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:\n - Shape shape:ConstraintShape: envthes:30375\n - Shape shape:VariableShape: envthes:30377,envthes:30333\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl",
-              "focusNodes": {
-                ":relatedDisjointWithBroaderTransitive": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:\n - Shape :relatedDisjointWithBroaderTransitive: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl",
-              "focusNodes": {
-                ":singlePrefLabel": {
-                  "nodes": [
-                    "envthes:30375",
-                    "envthes:",
-                    "envthes:23",
-                    "envthes:30377",
-                    "envthes:30333"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:\n - Shape :singlePrefLabel: envthes:30375,envthes:,envthes:23,envthes:30377,envthes:30333\n"
+              "message": "Focus nodes for https://raw.githubusercontent.com/SirkoS/iadopt-schema/refs/heads/main/shacl/iadopt.sh.ttl:\n - Shape shape:VariableShape: envthes:30333,envthes:30377\n - Shape shape:ConstraintShape: envthes:30375\n"
             }
           ]
         }
